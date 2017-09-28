@@ -240,4 +240,6 @@ public interface HasSlots {
      * @return the children of the slot in a sorted list.
      */
     <T extends PresenterWidget<?> & Comparable<T>> List<T> getChildren(OrderedSlot<T> slot);
+
+    Set<? extends PresenterWidget<?>> getChildren();
 }

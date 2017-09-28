@@ -535,6 +535,11 @@ public abstract class PresenterWidget<V extends View> extends HandlerContainerIm
         return result;
     }
 
+    @Override
+    public Set<? extends PresenterWidget<?>> getChildren() {
+        return children;
+    }
+
     /**
      * Registers an event handler towards the {@link EventBus}.
      * Use this only in the rare situations where you want to manually
